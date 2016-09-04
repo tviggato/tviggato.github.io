@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Drive Time Between European Cities</title>
+  <meta charset="utf-8">
+  <meta name="description" content="Drive Time Between European Cities">
+  <meta name="author" content="Me!">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>Drive Time Between European Cities</h1>
+    <h2>(Are we there yet??)</h2>
+    <p>Me!<br/>Coursera Student</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Problem</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Visiting Europe, and don&#39;t know the distance between cities?</p>
+
+<p>Or, what if you don&#39;t know how long the drive should take?</p>
+
+<p>Visit my Shiny App!!!</p>
+
+<p><a href="https://tviggato.shinyapps.io/DataProducts/">https://tviggato.shinyapps.io/DataProducts/</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Let&#39;s look at a demo...</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Want to drive from Athens to Cologne?</p>
+
+<p>Let&#39;s say you think you will drive 100 kph (62 mph)</p>
+
+<pre><code class="r">citydist[&quot;Cologne&quot;,]
+</code></pre>
+
+<pre><code>##         Distance (km) Driving Time (hours)
+## Cologne          2762                27.62
+</code></pre>
+
+<p>But what if you get stuck in traffic, and only travel at 75 kph (47 mph)</p>
+
+<pre><code class="r">citydist[&quot;Cologne&quot;,]
+</code></pre>
+
+<pre><code>##         Distance (km) Driving Time (hours)
+## Cologne          2762             36.82667
+</code></pre>
+
+<p>Wouldn&#39;t all this be easier on a web app??
+<a href="https://tviggato.shinyapps.io/DataProducts/">https://tviggato.shinyapps.io/DataProducts/</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Another example</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>Or, maybe you are in Munich and deciding between going to Milan or Paris, and will drive 85 kph</p>
+
+<pre><code class="r">citydist[c(&quot;Milan&quot;,&quot;Paris&quot;),]
+</code></pre>
+
+<pre><code>##       Distance (km) Driving Time (hours)
+## Milan           331                 3.31
+## Paris           821                 8.21
+</code></pre>
+
+<p>Wow, it&#39;s a good thing we ran the app, I didn&#39;t realize it was so far to Paris!</p>
+
+<p>If you use the web app, you can see the distance to all the major European cities at once!
+<a href="https://tviggato.shinyapps.io/DataProducts/">https://tviggato.shinyapps.io/DataProducts/</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Summary</h2>
+  </hgroup>
+  <article data-timings="">
+    <p>It&#39;s AMAZING!!!</p>
+
+<p>Make better informed decisions</p>
+
+<p>Access to information, easier, faster!! </p>
+
+<p>TIME = MONEY!!!</p>
+
+<p><a href="https://tviggato.shinyapps.io/DataProducts/">https://tviggato.shinyapps.io/DataProducts/</a></p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Problem'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Let&#39;s look at a demo...'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Another example'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Summary'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
